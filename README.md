@@ -1,8 +1,8 @@
-# Webpack Starter
+# CRUD Webpack
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
+Practica CRUD con webpack.
 
-### Notas:
+<!--### Notas:
 Recuerden reconstruir los módulos de Node
 ```
 npm install
@@ -11,4 +11,4 @@ npm install
 Y para construir el build, recueren:
 ```
 npm run build
-```
+```-->
