@@ -1,2 +1,0 @@
-import '../css/componentes.css';
-
