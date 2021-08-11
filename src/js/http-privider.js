@@ -6,7 +6,7 @@ const getJoke = async() => {
 
     try {
         
-        const response = await fetch( jorkeUrl ); // 'response' guarda el 'body' (objeto) de la petición
+        const response = await fetch( jorkeUrl ); // 'response' la petición
 
         if ( !response.ok ) throw 'Error!'; // sí la petición resulta erronea
 
@@ -21,10 +21,7 @@ const getJoke = async() => {
         throw err;
 
     }
-
-    
-
-};
+}
 
 
 export{
