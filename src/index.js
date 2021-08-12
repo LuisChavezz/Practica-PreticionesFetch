@@ -10,3 +10,8 @@ import * as CRUD from './js/crud-provider';
 //init2();
 
 CRUD.getUser( 1 ).then( console.log );
+
+CRUD.createUser({
+    name: 'Fernando',
+    job: 'Programador',
+}).then( console.log );
