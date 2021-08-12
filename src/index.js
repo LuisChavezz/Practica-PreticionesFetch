@@ -15,3 +15,8 @@ CRUD.createUser({
     name: 'Fernando',
     job: 'Programador',
 }).then( console.log );
+
+CRUD.updateUser( 1, {
+    name: 'Alberto',
+    job: 'Facturista',
+}).then( console.log );

@@ -24,9 +24,24 @@ const createUser = async( user ) => {
 
 }
 
+const updateUser = async( id, user ) => {
+
+    const response = await fetch( `${ urlCrud }/${ id }`, {
+        method: 'PUT',
+        body: JSON.stringify( user ), // convertirá el objeto a enviar en una cadena para su envio.
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+
+    return await response.json();
+
+}
+
 
 
 export{
     getUser,
-    createUser
+    createUser,
+    updateUser
 }
