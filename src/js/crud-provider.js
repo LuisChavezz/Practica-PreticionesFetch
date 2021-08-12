@@ -38,10 +38,20 @@ const updateUser = async( id, user ) => {
 
 }
 
+const deleteUser = async( id ) => {
+
+    const response = await fetch( `${ urlCrud }/${ id }`, {
+        method: 'DELETE'
+    });
+
+    return ( response.ok ) ? 'Usuario eliminado.' : 'Error al intentar eliminar usuario.';
+
+}
 
 
 export{
     getUser,
     createUser,
-    updateUser
+    updateUser,
+    deleteUser
 }

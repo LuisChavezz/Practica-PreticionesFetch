@@ -20,3 +20,5 @@ CRUD.updateUser( 1, {
     name: 'Alberto',
     job: 'Facturista',
 }).then( console.log );
+
+CRUD.deleteUser( 1 ).then( console.log );
