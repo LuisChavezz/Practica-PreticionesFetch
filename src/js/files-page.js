@@ -1,3 +1,4 @@
+import { uploadImage } from "./http-privider";
 
 const body = document.body;
 let inputFile, imgPhoto;
@@ -13,7 +14,7 @@ const createInputFileHtml = () => {
         <input type="file" accept="image/png, image/jpeg" />
 
         <br>
-        <img id="foto" class="img-thumbail" src="">
+        <img id="foto" class="img-thumbnail" src="">
     `;
 
     const div = document.createElement('div');
@@ -30,7 +31,8 @@ const events = () => {
     inputFile.addEventListener( 'change', ( event ) => {
 
         const file = event.target.files[0]; // guarda el 'file' en la posición 0 del arreglo 'files' que contiene el evento
-        console.log( file );
+        //console.log( file );
+        uploadImage( file ).then( url => imgPhoto.src = url );
 
     });
 
