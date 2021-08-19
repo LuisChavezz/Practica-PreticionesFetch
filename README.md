@@ -1,14 +1,9 @@
-# CRUD Webpack
+# Peticiones Fetch
 
-Practica CRUD con webpack.
+Practica de peticiones fetch. 
 
-<!--### Notas:
-Recuerden reconstruir los módulos de Node
-```
-npm install
-```
-
-Y para construir el build, recueren:
-```
-npm run build
-```-->
+### Prcticas:
+*Recibir un objeto
+*Recibir un arreglo de objetos
+*CRUD
+*Subir imágen a la nube desde un input
